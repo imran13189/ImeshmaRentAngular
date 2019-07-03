@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\ImeshmaRent\\Imeshma.csproj": {}
+    "D:\\RentSaleProject\\ImeshmaCore\\Imeshma.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\ImeshmaRent\\Imeshma.csproj": {
+    "D:\\RentSaleProject\\ImeshmaCore\\Imeshma.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\ImeshmaRent\\Imeshma.csproj",
+        "projectUniqueName": "D:\\RentSaleProject\\ImeshmaCore\\Imeshma.csproj",
         "projectName": "Imeshma",
-        "projectPath": "D:\\Projects\\ImeshmaRent\\Imeshma.csproj",
+        "projectPath": "D:\\RentSaleProject\\ImeshmaCore\\Imeshma.csproj",
         "packagesPath": "C:\\Users\\Imran\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\ImeshmaRent\\obj\\",
+        "outputPath": "D:\\RentSaleProject\\ImeshmaCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

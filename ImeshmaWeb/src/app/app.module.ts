@@ -14,6 +14,20 @@ import { ModalPopupComponent } from './shared/modal-popup/modal-popup.component'
 import { NgbDate, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginWizardComponent } from './shared/login-wizard/login-wizard.component';
 import { FormWizardModule } from 'angular2-wizard';
+import { SocialLoginModule, FacebookLoginProvider, GoogleLoginProvider, AuthServiceConfig } from 'ng4-social-login'
+const config = new AuthServiceConfig([{
+  id: GoogleLoginProvider.PROVIDER_ID,
+  provider: new GoogleLoginProvider('1000636081073-gfhdpghgfji3m3uk3p26qpv8hncc1ob6.apps.googleusercontent.com')
+},
+  {
+    id: FacebookLoginProvider.PROVIDER_ID,
+    provider: new FacebookLoginProvider('224344228440102')
+  }
+], false);
+
+export function provideConfig(){
+  return config;
+}
 
 @NgModule({
   declarations: [
@@ -33,9 +47,12 @@ import { FormWizardModule } from 'angular2-wizard';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    FormWizardModule
+    FormWizardModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [
+    { provide: AuthServiceConfig, useFactory: provideConfig }
+  ],
   bootstrap: [AppComponent],
   entryComponents: [ModalPopupComponent]
 })

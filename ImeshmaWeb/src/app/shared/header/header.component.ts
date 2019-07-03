@@ -16,6 +16,6 @@ export class HeaderComponent implements OnInit {
   }
 
   onClick() {
-    this.modal.open(ModalPopupComponent);
+    this.modal.open(ModalPopupComponent, { size: 'lg' });
   }
 }
